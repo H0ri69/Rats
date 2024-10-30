@@ -1,0 +1,211 @@
+:root {
+  --bg-color: #121212;
+  --surface-color: #1e1e1e;
+  --primary-color: #bb86fc;
+  --secondary-color: #03dac6;
+  --text-color: #e0e0e0;
+  --text-color-secondary: #a0a0a0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.header-div {
+  background-color: var(--surface-color);
+  padding: 1rem 5%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav-bar {
+  display: flex;
+  list-style: none;
+}
+
+#nav-bar li {
+  margin-left: 2rem;
+}
+
+#nav-bar a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 300;
+  transition: color 0.3s ease;
+}
+
+#nav-bar a:hover {
+  color: var(--primary-color);
+}
+
+#title {
+  text-align: center;
+  padding: 8rem 0 4rem;
+}
+
+#title h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+#welcome,
+#features,
+#pricing {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 5%;
+}
+
+#welcome p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+#video-div {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#video {
+  max-width: 100%;
+  height: auto;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+#email {
+  padding: 0.8rem;
+  width: 300px;
+  border: none;
+  background-color: var(--surface-color);
+  color: var(--text-color);
+  border-bottom: 2px solid var(--primary-color);
+  font-size: 1rem;
+}
+
+#submit {
+  padding: 0.8rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+  background-color: var(--secondary-color);
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.icon img {
+  width: 80px;
+  margin-right: 2rem;
+}
+
+.desc h2 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+#pricing {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+#pricing-div {
+  flex: 1 1 300px;
+  max-width: 350px;
+  min-width: 250px;
+  padding: 2rem;
+  background-color: var(--surface-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+#product {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+#pricing-div h2 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+#pricing-div ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color-secondary);
+  flex-grow: 1;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  #pricing-div {
+    flex-basis: 100%;
+    max-width: none;
+  }
+}
+
+#style-switcher {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#style-switcher:hover {
+  background-color: #555;
+}
