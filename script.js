@@ -1,18 +1,4 @@
-document.addEventListener("DOMContentLoaded", (event) => {
-  const styleSwitcher = document.getElementById("style-switcher");
-  const themeStyle = document.getElementById("theme-style");
-  let currentStyle = 1;
 
-  styleSwitcher.addEventListener("click", () => {
-    if (currentStyle === 1) {
-      themeStyle.href = "style2.css";
-      currentStyle = 2;
-    } else {
-      themeStyle.href = "style1.css";
-      currentStyle = 1;
-    }
-  });
-});
 
 document.addEventListener("DOMContentLoaded", (event) => {
   const header = document.querySelector(".header-div");
